@@ -7,6 +7,6 @@
 	],
 	"scripts": {
 		"build": "npm run build --workspace=server && npm run build --workspace=sh-website",
-		"netlify-build": "cd server && npm install && npm run build && cd ../sh-website && npm install && npm run build"
+		"netlify-build": "cd server && npm install && npx prisma generate && npm run build && cd ../sh-website && npm install && npm run build"
 	}
 }

@@ -8,6 +8,7 @@
 		"start": "npm run build && node dist/index.js",
 		"dev": "npm run build && concurrently \"npx tsc -w\" \"nodemon --exec ts-node src/index.ts\"",
 		"seed": "tsx prisma/seed.ts",
+		"postinstall": "npx prisma generate",
 		"prisma:generate": "prisma generate",
 		"postprisma:generate": "shx cp -r node_modules/.prisma/client/index.d.ts ../sh-website/src/types/prismaTypes.d.ts"
 	},
@@ -31,7 +32,7 @@
 		"morgan": "^1.10.1",
 		"multer": "^2.1.1",
 		"pg": "^8.20.0",
-		"prisma": "^6.19.3",
+		"prisma": "^4.16.2",
 		"uuid": "^13.0.0"
 	},
 	"devDependencies": {

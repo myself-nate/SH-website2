@@ -1,0 +1,152 @@
+[
+	{
+		"id": 1,
+		"name": "Sunny Downtown Store",
+		"description": "SH store no. 1.",
+		"photoUrls": [
+			"https://example.com/apartment1_1.jpg",
+			"https://example.com/apartment1_2.jpg"
+		],
+		"amenities": ["CabineDeProba", "Toaleta"],
+		"propertyType": "SHStore",
+		"postedDate": "2023-05-15T00:00:00Z",
+		"averageRating": 4.5,
+		"numberOfReviews": 10,
+		"locationId": 1
+	},
+	{
+		"id": 2,
+		"name": "Cozy Beach Store",
+		"description": "SH store no. 2.",
+		"photoUrls": [
+			"https://example.com/beachhouse1.jpg",
+			"https://example.com/beachhouse2.jpg"
+		],
+		"amenities": ["CabineDeProba", "Toaleta"],
+		"propertyType": "ClothingShop",
+		"postedDate": "2023-06-01T00:00:00Z",
+		"averageRating": 4.8,
+		"numberOfReviews": 5,
+		"locationId": 2
+	},
+	{
+		"id": 3,
+		"name": "Modern City Store",
+		"description": "Sleek and stylish store in the heart of the city.",
+		"photoUrls": [
+			"https://example.com/cityloft1.jpg",
+			"https://example.com/cityloft2.jpg"
+		],
+		"amenities": ["CabineDeProba", "Toaleta"],
+		"propertyType": "NormalStore",
+		"postedDate": "2023-07-01T00:00:00Z",
+		"averageRating": 4.7,
+		"numberOfReviews": 8,
+		"locationId": 3
+	},
+	{
+		"id": 4,
+		"name": "Spacious Family Store",
+		"description": "Large family store.",
+		"photoUrls": [
+			"https://example.com/familyhome1.jpg",
+			"https://example.com/familyhome2.jpg"
+		],
+		"amenities": ["CabineDeProba", "Toaleta"],
+		"propertyType": "Store",
+		"postedDate": "2023-06-15T00:00:00Z",
+		"averageRating": 4.9,
+		"numberOfReviews": 12,
+		"locationId": 4
+	},
+	{
+		"id": 5,
+		"name": "Luxury Store",
+		"description": "Stunning store.",
+		"photoUrls": [
+			"https://example.com/penthouse1.jpg",
+			"https://example.com/penthouse2.jpg"
+		],
+		"amenities": ["CabineDeProba", "Toaleta"],
+		"propertyType": "Store",
+		"postedDate": "2023-07-01T00:00:00Z",
+		"averageRating": 5.0,
+		"numberOfReviews": 15,
+		"locationId": 5
+	},
+	{
+		"id": 6,
+		"name": "Cozy Store",
+		"description": "Efficient small store perfect for students or young professionals.",
+		"photoUrls": [
+			"https://example.com/studio1.jpg",
+			"https://example.com/studio2.jpg"
+		],
+		"amenities": ["CabineDeProba", "Toaleta"],
+		"propertyType": "Store",
+		"postedDate": "2023-08-01T00:00:00Z",
+		"averageRating": 4.2,
+		"numberOfReviews": 6,
+		"locationId": 6
+	},
+	{
+		"id": 7,
+		"name": "Historic Brownstone Store",
+		"description": "Charming brownstone store with original features and modern updates.",
+		"photoUrls": [
+			"https://example.com/brownstone1.jpg",
+			"https://example.com/brownstone2.jpg"
+		],
+		"amenities": ["CabineDeProba", "Toaleta"],
+		"propertyType": "LuxuryStore",
+		"postedDate": "2023-09-01T00:00:00Z",
+		"averageRating": 4.6,
+		"numberOfReviews": 9,
+		"locationId": 7
+	},
+	{
+		"id": 8,
+		"name": "Urban Micro-Store",
+		"description": "Compact and efficient store space in the heart of the city.",
+		"photoUrls": [
+			"https://example.com/micro1.jpg",
+			"https://example.com/micro2.jpg"
+		],
+		"amenities": ["CabineDeProba", "Toaleta"],
+		"propertyType": "SHStore",
+		"postedDate": "2023-08-01T00:00:00Z",
+		"averageRating": 4.3,
+		"numberOfReviews": 7,
+		"locationId": 8
+	},
+	{
+		"id": 9,
+		"name": "Mountain View Store",
+		"description": "Rustic store.",
+		"photoUrls": [
+			"https://example.com/cabin1.jpg",
+			"https://example.com/cabin2.jpg"
+		],
+		"amenities": ["CabineDeProba", "Toaleta"],
+		"propertyType": "Store",
+		"postedDate": "2023-08-15T00:00:00Z",
+		"averageRating": 4.9,
+		"numberOfReviews": 11,
+		"locationId": 9
+	},
+	{
+		"id": 10,
+		"name": "Eco-Friendly Tiny Store",
+		"description": "Sustainable shopping in a compact, well-designed tiny store.",
+		"photoUrls": [
+			"https://example.com/tinyhouse1.jpg",
+			"https://example.com/tinyhouse2.jpg"
+		],
+		"amenities": ["CabineDeProba", "Toaleta"],
+		"propertyType": "TinyStore",
+		"postedDate": "2023-08-10T00:00:00Z",
+		"averageRating": 4.7,
+		"numberOfReviews": 8,
+		"locationId": 10
+	}
+]

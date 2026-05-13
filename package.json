@@ -1,0 +1,12 @@
+{
+	"name": "harta-haine",
+	"private": true,
+	"workspaces": [
+		"server",
+		"sh-website"
+	],
+	"scripts": {
+		"build": "npm run build --workspace=server && npm run build --workspace=sh-website",
+		"netlify-build": "cd server && npm install && npm run build && cd ../sh-website && npm install && npm run build"
+	}
+}

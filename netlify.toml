@@ -1,0 +1,12 @@
+# This tells Netlify where to find your Next.js app
+[build]
+  # The directory where your package.json and source code live
+  base = "."
+  # The command Netlify will run to build your site
+  command = "npm run netlify-build"
+  # This is usually ignored, as the official Next.js plugin will handle the output
+  publish = "sh-webiste/.next"
+
+# This is the essential plugin for running Next.js on Netlify
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

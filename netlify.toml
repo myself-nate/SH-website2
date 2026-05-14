@@ -7,6 +7,16 @@
   # This is usually ignored, as the official Next.js plugin will handle the output
   publish = "sh-website/.next"
 
+  [build.environment]
+  # Disable Turbopack (uses webpack instead)
+  NEXT_PRIVATE_TARGET = "webpack"
+  # Force platform for native modules
+  NODE_OPTIONS = "--max_old_space_size=4096"
+  # Skip lightningcss optimization
+  NEXT_DISABLE_SWC_WASM = "true"
+  # Use webpack instead of Turbopack for build
+  TURBOPACK = "0"
+
 # This is the essential plugin for running Next.js on Netlify
 [[plugins]]
   package = "@netlify/plugin-nextjs"

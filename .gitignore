@@ -2,23 +2,23 @@
 **/dist/
 
 .env
-client/.env.local
-client/.env.development
-client/.env.production
+sh-website/.env.local
+sh-website/.env.development
+sh-website/.env.production
 server/.env
 
-client/.next/
+sh-website/.next/
 
 .DS_Store
 Thumbs.db
 
 .vscode/
 
-client/node_modules
+sh-website/node_modules
 server/node_modules
-client/dist
+sh-website/dist
 server/dist
-client/.env
+sh-website/.env
 server/.env
-client/.next
+sh-website/.next
 node_modules

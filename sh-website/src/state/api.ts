@@ -1,4 +1,4 @@
-import { cleanParams } from '@/lib/utils';
+import { cleanParams, withToast } from '@/lib/utils';
 import { Property } from '@/types/prismaTypes';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { FiltersState } from '.';
@@ -33,11 +33,21 @@ export const api = createApi({
 							{ type: 'Properties', id: 'LIST' },
 						]
 					: [{ type: 'Properties', id: 'LIST' }],
+			async onQueryStarted(_, { queryFulfilled }) {
+				await withToast(queryFulfilled, {
+					error: 'Nu s-au putut incarca locatiile.',
+				});
+			},
 		}),
 
 		getProperty: build.query<Property, number>({
 			query: (id) => `properties/${id}`,
 			providesTags: (result, error, id) => [{ type: 'PropertyDetails', id }],
+			async onQueryStarted(_, { queryFulfilled }) {
+				await withToast(queryFulfilled, {
+					error: 'Nu s-a putut incarca detaliile locatiei.',
+				});
+			},
 		}),
 
 		createProperty: build.mutation<Property, FormData>({
@@ -50,6 +60,12 @@ export const api = createApi({
 				{ type: 'Properties', id: 'LIST' },
 				// {type: 'Managers', id: result?.manager?.id},
 			],
+			async onQueryStarted(_, { queryFulfilled }) {
+				await withToast(queryFulfilled, {
+					success: 'Locatie adaugata!',
+					error: 'Nu s-a putut aduga locatia.',
+				});
+			},
 		}),
 	}),
 });
